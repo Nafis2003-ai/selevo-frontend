@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Merriweather, Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/layout/Navbar"
+import { Footer } from "@/components/layout/Footer"
 
 const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -36,7 +37,10 @@ export default function RootLayout({
       <body className="antialiased bg-white text-slate-900">
         <Navbar />
         {/* Offset for fixed navbar height (68px bar + 2.5px gradient line) */}
-        <div className="pt-[70.5px]">{children}</div>
+        <div className="pt-[70.5px]">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )

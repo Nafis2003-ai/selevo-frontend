@@ -125,3 +125,8 @@
 .carousel-content-enter-slow {
   animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+
+/* Hide scrollbar while keeping scroll behaviour */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

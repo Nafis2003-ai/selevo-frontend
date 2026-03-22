@@ -3,6 +3,9 @@ import { Users, Clock, Globe, BarChart3, Shield, Briefcase } from "lucide-react"
 import type { CSSProperties, ReactNode } from "react"
 import { AnimatedPhrase } from "@/components/hero/AnimatedPhrase"
 import { FeatureCarousel } from "@/components/home/FeatureCarousel"
+import { CustomersSection } from "@/components/home/CustomersSection"
+import { PlatformFeaturesSlider } from "@/components/home/PlatformFeaturesSlider"
+import { FAQSection } from "@/components/home/FAQSection"
 
 const TEAL = "#0b6b62"
 
@@ -98,6 +101,15 @@ export default function Home() {
 
       {/* ── Feature Carousel ── */}
       <FeatureCarousel />
+
+      {/* ── Our Customers ── */}
+      <CustomersSection />
+
+      {/* ── Platform Features Slider ── */}
+      <PlatformFeaturesSlider />
+
+      {/* ── FAQ ── */}
+      <FAQSection />
 
     </main>
   )
