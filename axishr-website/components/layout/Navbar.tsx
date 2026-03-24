@@ -20,6 +20,13 @@ import {
   Shield,
   Receipt,
   Heart,
+  Factory,
+  Landmark,
+  Activity,
+  Truck,
+  ShoppingBag,
+  Briefcase,
+  LayoutDashboard,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -117,10 +124,56 @@ const platformItems = [
   },
 ]
 
+const industryItems = [
+  {
+    title: "Industry Overview",
+    href: "/industries",
+    description: "How Selevo powers HR across every sector",
+    icon: LayoutDashboard,
+  },
+  {
+    title: "Manufacturing",
+    href: "/industries/manufacturing",
+    description: "Workforce solutions built for the factory floor",
+    icon: Factory,
+  },
+  {
+    title: "Banking & Financial Services",
+    href: "/industries/banking-financial-services",
+    description: "Compliant HR for regulated financial institutions",
+    icon: Landmark,
+  },
+  {
+    title: "Healthcare",
+    href: "/industries/healthcare",
+    description: "People operations for care-driven organisations",
+    icon: Activity,
+  },
+  {
+    title: "Logistics & Distribution",
+    href: "/industries/logistics-distribution",
+    description: "Manage mobile, shift-based workforce at scale",
+    icon: Truck,
+  },
+  {
+    title: "Retail & FMCG",
+    href: "/industries/retail-fmcg",
+    description: "Flexible HR for fast-moving retail teams",
+    icon: ShoppingBag,
+  },
+  {
+    title: "Professional Services & Technology",
+    href: "/industries/professional-services-technology",
+    description: "Talent-centric HR for knowledge-driven firms",
+    icon: Briefcase,
+  },
+]
+
 export function Navbar() {
   const pathname = usePathname()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobilePlatformOpen, setMobilePlatformOpen] = useState(false)
+  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false)
 
   const linkClass = (href: string) =>
     cn(
@@ -282,6 +335,107 @@ export function Navbar() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
 
+                  {/* Industries — dropdown */}
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger
+                      className={cn(
+                        "px-4 py-2 text-sm font-medium rounded-md transition-colors bg-transparent",
+                        "text-slate-600 hover:text-slate-900 hover:bg-slate-50 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900"
+                      )}
+                      style={{
+                        fontFamily: "var(--font-plus-jakarta)",
+                        color: pathname.startsWith("/industries") ? TEAL : undefined,
+                      }}
+                    >
+                      Industries
+                    </NavigationMenuTrigger>
+
+                    <NavigationMenuContent>
+                      <div className="w-[560px] p-6 bg-white rounded-xl shadow-xl border border-slate-100">
+                        {/* Header */}
+                        <div className="flex items-start justify-between mb-5">
+                          <div>
+                            <h3
+                              className="text-lg font-bold text-slate-900"
+                              style={{ fontFamily: "var(--font-merriweather)" }}
+                            >
+                              Industries
+                            </h3>
+                            <p
+                              className="text-sm text-slate-500 mt-0.5"
+                              style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                            >
+                              Tailored HR solutions for every sector.
+                            </p>
+                          </div>
+                          <Link href="/industries">
+                            <Button
+                              size="sm"
+                              className="text-white text-xs font-medium rounded-full px-4 hover:opacity-90 transition-opacity"
+                              style={{
+                                backgroundColor: TEAL,
+                                fontFamily: "var(--font-plus-jakarta)",
+                              }}
+                            >
+                              View All Industries →
+                            </Button>
+                          </Link>
+                        </div>
+
+                        {/* 7-item grid — 2 columns */}
+                        <div className="grid grid-cols-2 gap-1">
+                          {industryItems.map((item) => {
+                            const Icon = item.icon
+                            const active = pathname === item.href
+                            return (
+                              <NavigationMenuLink asChild key={item.href}>
+                                <Link
+                                  href={item.href}
+                                  className={cn(
+                                    "group flex items-start gap-3 p-3 rounded-lg transition-colors",
+                                    active ? "bg-teal-50" : "hover:bg-slate-50"
+                                  )}
+                                >
+                                  <div
+                                    className={cn(
+                                      "mt-0.5 w-8 h-8 rounded-md flex items-center justify-center flex-shrink-0 transition-colors",
+                                      active
+                                        ? "bg-teal-100"
+                                        : "bg-slate-100 group-hover:bg-teal-50"
+                                    )}
+                                  >
+                                    <Icon
+                                      className="w-4 h-4 transition-colors"
+                                      style={{ color: active ? TEAL : undefined }}
+                                      color={active ? TEAL : undefined}
+                                    />
+                                  </div>
+                                  <div>
+                                    <div
+                                      className="text-sm font-semibold transition-colors group-hover:text-[#0d9488]"
+                                      style={{
+                                        fontFamily: "var(--font-plus-jakarta)",
+                                        color: active ? TEAL : "#1e293b",
+                                      }}
+                                    >
+                                      {item.title}
+                                    </div>
+                                    <div
+                                      className="text-xs text-slate-500 mt-0.5 leading-relaxed"
+                                      style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                                    >
+                                      {item.description}
+                                    </div>
+                                  </div>
+                                </Link>
+                              </NavigationMenuLink>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+
                   {/* About */}
                   <NavigationMenuItem>
                     <NavigationMenuLink asChild>
@@ -401,6 +555,48 @@ export function Navbar() {
               {mobilePlatformOpen && (
                 <div className="mt-1 ml-4 space-y-0.5 border-l-2 pl-3" style={{ borderColor: "#99f6e4" }}>
                   {platformItems.map((item) => {
+                    const Icon = item.icon
+                    const active = pathname === item.href
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-colors hover:bg-slate-50"
+                        style={{
+                          fontFamily: "var(--font-plus-jakarta)",
+                          color: active ? TEAL : "#475569",
+                          backgroundColor: active ? "#f0fdfa" : undefined,
+                        }}
+                      >
+                        <Icon className="w-3.5 h-3.5 flex-shrink-0" />
+                        {item.title}
+                      </Link>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
+
+            {/* Industries accordion */}
+            <div>
+              <button
+                className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors"
+                onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+                style={{ fontFamily: "var(--font-plus-jakarta)" }}
+              >
+                Industries
+                <ChevronDown
+                  className={cn(
+                    "w-4 h-4 text-slate-400 transition-transform duration-200",
+                    mobileIndustriesOpen && "rotate-180"
+                  )}
+                />
+              </button>
+
+              {mobileIndustriesOpen && (
+                <div className="mt-1 ml-4 space-y-0.5 border-l-2 pl-3" style={{ borderColor: "#99f6e4" }}>
+                  {industryItems.map((item) => {
                     const Icon = item.icon
                     const active = pathname === item.href
                     return (
