@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Can we run different review cycles for different employee groups?",
     answer:
-      "Yes. AxisHR supports multiple concurrent review cycles with different timelines, rating scales, and participant configurations. You can run separate cycles for management, individual contributors, or specific departments simultaneously.",
+      "Yes. Selevo supports multiple concurrent review cycles with different timelines, rating scales, and participant configurations. You can run separate cycles for management, individual contributors, or specific departments simultaneously.",
   },
   {
     question: "How does the 360° feedback process work?",
@@ -100,7 +100,7 @@ const faqs = [
   {
     question: "What happens if a manager or employee does not complete the review on time?",
     answer:
-      "AxisHR sends automated reminders to outstanding participants as review deadlines approach. If submissions remain incomplete, the system escalates to the HR administrator for follow-up action before the cycle closes.",
+      "Selevo sends automated reminders to outstanding participants as review deadlines approach. If submissions remain incomplete, the system escalates to the HR administrator for follow-up action before the cycle closes.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function PerformanceManagementPage() {
                   body: "Many organisations manage performance reviews in emails, PDF forms, and spreadsheets — making it difficult to track completion, calibrate ratings consistently, or connect review results to downstream HR processes.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR provides a structured, configurable performance workflow from goal-setting to calibration and compensation linkage — giving HR, managers, and employees a single connected process rather than a fragmented manual effort.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo provides a structured, configurable performance workflow from goal-setting to calibration and compensation linkage — giving HR, managers, and employees a single connected process rather than a fragmented manual effort.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function PerformanceManagementPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's performance module is designed for organisations that want structured, documented, and consistently applied review processes — whether running annual cycles, continuous check-ins, or project-based assessments across multiple business units.
+                Selevo's performance module is designed for organisations that want structured, documented, and consistently applied review processes — whether running annual cycles, continuous check-ins, or project-based assessments across multiple business units.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function PerformanceManagementPage() {
       <PlatformVideoSection
         heading="See Performance Management"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR structures review cycles, captures 360° feedback, and connects performance to compensation."
+        subtitle="Watch how Selevo structures review cycles, captures 360° feedback, and connects performance to compensation."
         videoId="f-tyrSsy04k"
       />
 

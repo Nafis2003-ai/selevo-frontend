@@ -69,7 +69,7 @@ export function PayrollFAQSection() {
               className="text-sm text-slate-500 leading-relaxed max-w-xs"
               style={{ fontFamily: "var(--font-plus-jakarta)" }}
             >
-              Common questions about payroll on AxisHR. Can&apos;t find an answer?{" "}
+              Common questions about payroll on Selevo. Can&apos;t find an answer?{" "}
               <a
                 href="/contact"
                 className="font-medium underline underline-offset-2 hover:opacity-75 transition-opacity"

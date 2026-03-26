@@ -232,6 +232,22 @@ export function Navbar() {
                     </NavigationMenuLink>
                   </NavigationMenuItem>
 
+                  {/* Pricing */}
+                  <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href="/pricing"
+                        className={linkClass("/pricing")}
+                        style={{
+                          fontFamily: "var(--font-plus-jakarta)",
+                          color: pathname === "/pricing" ? TEAL : undefined,
+                        }}
+                      >
+                        Pricing
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+
                   {/* Our Platform — mega dropdown */}
                   <NavigationMenuItem>
                     <NavigationMenuTrigger
@@ -534,6 +550,19 @@ export function Navbar() {
               }}
             >
               Why Selevo
+            </Link>
+
+            <Link
+              href="/pricing"
+              onClick={() => setMobileOpen(false)}
+              className="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors"
+              style={{
+                fontFamily: "var(--font-plus-jakarta)",
+                color: pathname === "/pricing" ? TEAL : undefined,
+                backgroundColor: pathname === "/pricing" ? "#f0fdfa" : undefined,
+              }}
+            >
+              Pricing
             </Link>
 
             {/* Our Platform accordion */}

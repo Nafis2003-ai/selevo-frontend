@@ -83,14 +83,14 @@ const coreFeatures = [
 
 const faqs = [
   {
-    question: "How does role-based access control work in AxisHR?",
+    question: "How does role-based access control work in Selevo?",
     answer:
       "Each user is assigned a role that defines which modules they can access, which records they can view, and which actions they can take. Roles are configured by the system administrator and can be applied to individuals or groups. Field-level permissions provide an additional layer of control within modules.",
   },
   {
     question: "Is the audit trail tamper-proof?",
     answer:
-      "Yes. The AxisHR audit log is append-only — records cannot be deleted or edited after they are created. Every logged event includes the user identity, action type, affected record, and timestamp, providing a reliable paper trail for internal and external review.",
+      "Yes. The Selevo audit log is append-only — records cannot be deleted or edited after they are created. Every logged event includes the user identity, action type, affected record, and timestamp, providing a reliable paper trail for internal and external review.",
   },
   {
     question: "What data does the audit trail cover?",
@@ -98,9 +98,9 @@ const faqs = [
       "The audit trail captures all create, update, delete, approve, and reject actions across HR modules — including employee record changes, payroll approvals, leave decisions, compensation revisions, and user access modifications.",
   },
   {
-    question: "Is AxisHR designed to support GDPR or other data protection requirements?",
+    question: "Is Selevo designed to support GDPR or other data protection requirements?",
     answer:
-      "Yes. AxisHR includes data retention configuration, access controls, audit logging, and consent management features that support GDPR compliance obligations. Specific configuration guidance is provided during implementation based on your operating jurisdictions.",
+      "Yes. Selevo includes data retention configuration, access controls, audit logging, and consent management features that support GDPR compliance obligations. Specific configuration guidance is provided during implementation based on your operating jurisdictions.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function ComplianceSecurityPage() {
                   body: "Many HR platforms offer broad role permissions without field-level granularity, no tamper-proof audit trail, and limited support for MFA — leaving organisations exposed to data breach risk and audit non-compliance.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR is built security-first, with granular role-based access, field-level permissions, an append-only audit log, and MFA support — giving security and compliance teams the controls they need without restricting HR operations.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo is built security-first, with granular role-based access, field-level permissions, an append-only audit log, and MFA support — giving security and compliance teams the controls they need without restricting HR operations.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function ComplianceSecurityPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's security architecture is designed to meet the access control and audit requirements of enterprise HR operations — supporting GDPR, internal audit standards, and industry-specific compliance frameworks without requiring custom development or workarounds.
+                Selevo's security architecture is designed to meet the access control and audit requirements of enterprise HR operations — supporting GDPR, internal audit standards, and industry-specific compliance frameworks without requiring custom development or workarounds.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function ComplianceSecurityPage() {
       <PlatformVideoSection
         heading="See Compliance & Security"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR manages role-based access, audit trails, and compliance controls across the entire platform."
+        subtitle="Watch how Selevo manages role-based access, audit trails, and compliance controls across the entire platform."
         videoId="f-tyrSsy04k"
       />
 

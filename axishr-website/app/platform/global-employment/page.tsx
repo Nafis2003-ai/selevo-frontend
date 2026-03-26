@@ -83,9 +83,9 @@ const coreFeatures = [
 
 const faqs = [
   {
-    question: "Which countries does AxisHR support for payroll?",
+    question: "Which countries does Selevo support for payroll?",
     answer:
-      "AxisHR is built to support multi-jurisdiction payroll with localised statutory rules. Supported jurisdictions are configured during implementation based on your organisation's operational footprint. Speak to our team for a current list of supported regions.",
+      "Selevo is built to support multi-jurisdiction payroll with localised statutory rules. Supported jurisdictions are configured during implementation based on your organisation's operational footprint. Speak to our team for a current list of supported regions.",
   },
   {
     question: "How does multi-currency payroll work?",
@@ -95,12 +95,12 @@ const faqs = [
   {
     question: "Can we manage employees employed in different countries under one system?",
     answer:
-      "Yes. AxisHR separates employees by jurisdiction and entity while providing a unified global view. Each employee is governed by the statutory rules of their employing entity's jurisdiction.",
+      "Yes. Selevo separates employees by jurisdiction and entity while providing a unified global view. Each employee is governed by the statutory rules of their employing entity's jurisdiction.",
   },
   {
     question: "How are statutory changes in each country handled?",
     answer:
-      "AxisHR maintains jurisdiction-specific statutory rate tables that are updated as regulations change. Your organisation is notified of upcoming statutory changes so configurations can be reviewed and applied before the next payroll cycle.",
+      "Selevo maintains jurisdiction-specific statutory rate tables that are updated as regulations change. Your organisation is notified of upcoming statutory changes so configurations can be reviewed and applied before the next payroll cycle.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function GlobalEmploymentPage() {
                   body: "Global HR teams often maintain separate systems per country with no unified view, creating reconciliation overhead, compliance risk, and delayed financial reporting at the group level.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR natively supports multi-jurisdiction employment with localised statutory logic, currency management, and a global reporting layer — all without requiring separate tools per country.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo natively supports multi-jurisdiction employment with localised statutory logic, currency management, and a global reporting layer — all without requiring separate tools per country.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function GlobalEmploymentPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR is built for organisations managing cross-border workforces, with jurisdiction-level configuration that ensures every entity operates within its local legal framework while remaining visible and auditable at the group level.
+                Selevo is built for organisations managing cross-border workforces, with jurisdiction-level configuration that ensures every entity operates within its local legal framework while remaining visible and auditable at the group level.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function GlobalEmploymentPage() {
       <PlatformVideoSection
         heading="See Global Employment"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR handles multi-jurisdiction payroll, statutory compliance, and cross-border workforce management."
+        subtitle="Watch how Selevo handles multi-jurisdiction payroll, statutory compliance, and cross-border workforce management."
         videoId="f-tyrSsy04k"
       />
 

@@ -39,7 +39,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="mt-16" style={{ backgroundColor: TEAL }}>
+    <footer style={{ backgroundColor: TEAL }}>
       <div className="max-w-7xl mx-auto px-8 sm:px-10 pt-12 pb-8">
         {/* ── Main grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 lg:gap-12">

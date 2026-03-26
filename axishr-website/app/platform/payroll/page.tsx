@@ -252,8 +252,8 @@ export default function PayrollPage() {
                   body: "Payroll teams often depend on manual consolidation from attendance, leave, claims, and compensation changes. This creates end-of-cycle pressure and limited traceability when exceptions occur.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR manages payroll as a structured workflow from pre-check to lock. Every run is traceable, every exception is visible, and downstream outputs are controlled.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo manages payroll as a structured workflow from pre-check to lock. Every run is traceable, every exception is visible, and downstream outputs are controlled.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -510,7 +510,7 @@ export default function PayrollPage() {
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
                 Payroll compliance requires defensible records for wages, deductions, taxes, and approvals.
-                AxisHR maintains structured payroll evidence to support internal controls and external review.
+                Selevo maintains structured payroll evidence to support internal controls and external review.
               </p>
 
               {/* Paragraph 2 */}

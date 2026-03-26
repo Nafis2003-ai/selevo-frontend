@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "How often can pulse surveys be sent?",
     answer:
-      "Survey frequency is configurable — you can run weekly, monthly, or quarterly pulse checks depending on what your organisation needs. AxisHR tracks response fatigue indicators and allows HR to stagger surveys across different teams to avoid overload.",
+      "Survey frequency is configurable — you can run weekly, monthly, or quarterly pulse checks depending on what your organisation needs. Selevo tracks response fatigue indicators and allows HR to stagger surveys across different teams to avoid overload.",
   },
   {
     question: "How does peer recognition work?",
@@ -234,8 +234,8 @@ export default function EmployeeEngagementPage() {
                   body: "Many organisations either do not measure engagement at all, or conduct infrequent annual surveys that are too delayed to drive timely action. When data exists, it often lives in separate tools disconnected from the rest of the HR platform.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR makes engagement measurement a continuous, lightweight part of the employee experience — with pulse surveys, recognition tools, and dashboards integrated into the same platform used for every other HR process.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo makes engagement measurement a continuous, lightweight part of the employee experience — with pulse surveys, recognition tools, and dashboards integrated into the same platform used for every other HR process.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function EmployeeEngagementPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's engagement module is designed for HR teams and leaders who want to move beyond intuition-based culture management — providing structured measurement, recognition infrastructure, and trend data that connects team sentiment to people strategy decisions.
+                Selevo's engagement module is designed for HR teams and leaders who want to move beyond intuition-based culture management — providing structured measurement, recognition infrastructure, and trend data that connects team sentiment to people strategy decisions.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function EmployeeEngagementPage() {
       <PlatformVideoSection
         heading="See Employee Engagement"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR captures team sentiment through pulse surveys, recognition tools, and engagement analytics."
+        subtitle="Watch how Selevo captures team sentiment through pulse surveys, recognition tools, and engagement analytics."
         videoId="f-tyrSsy04k"
       />
 

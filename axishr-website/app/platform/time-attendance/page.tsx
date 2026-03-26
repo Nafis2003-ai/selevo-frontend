@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "Can we manage different shift patterns for different departments?",
     answer:
-      "Yes. AxisHR supports multiple shift configurations that can be applied at the department, branch, or individual employee level. Rotational schedules, fixed shifts, and flexible working arrangements are all configurable.",
+      "Yes. Selevo supports multiple shift configurations that can be applied at the department, branch, or individual employee level. Rotational schedules, fixed shifts, and flexible working arrangements are all configurable.",
   },
   {
     question: "How are overtime rules handled?",
@@ -234,8 +234,8 @@ export default function TimeAttendancePage() {
                   body: "Many organisations collect attendance data through separate systems or spreadsheets that require manual consolidation before each payroll cycle, introducing delays and transcription errors.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR connects time and attendance directly to the payroll engine. Approved records flow in automatically, exceptions are resolved before payroll runs, and every adjustment is traceable.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo connects time and attendance directly to the payroll engine. Approved records flow in automatically, exceptions are resolved before payroll runs, and every adjustment is traceable.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function TimeAttendancePage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's time and attendance module is designed for organisations where payroll accuracy starts with workforce scheduling — connecting shift management, exception resolution, and payroll in a single traceable workflow.
+                Selevo's time and attendance module is designed for organisations where payroll accuracy starts with workforce scheduling — connecting shift management, exception resolution, and payroll in a single traceable workflow.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function TimeAttendancePage() {
       <PlatformVideoSection
         heading="See Time & Attendance"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR captures, validates, and syncs attendance records into payroll without manual reconciliation."
+        subtitle="Watch how Selevo captures, validates, and syncs attendance records into payroll without manual reconciliation."
         videoId="f-tyrSsy04k"
       />
 

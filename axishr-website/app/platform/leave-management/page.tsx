@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Can we configure different leave policies for different employee groups?",
     answer:
-      "Yes. AxisHR supports multiple leave policy configurations that can be applied by employment type, department, grade, or branch. Each policy can have its own entitlement amounts, accrual rules, and carryover limits.",
+      "Yes. Selevo supports multiple leave policy configurations that can be applied by employment type, department, grade, or branch. Each policy can have its own entitlement amounts, accrual rules, and carryover limits.",
   },
   {
     question: "How does the accrual engine work?",
@@ -234,8 +234,8 @@ export default function LeaveManagementPage() {
                   body: "Teams managing leave through spreadsheets or disconnected systems face balance errors, approval delays, and a payroll team that still needs to manually calculate no-pay deductions at month-end.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR handles leave as a fully automated policy engine — from entitlement configuration to accrual and payroll sync — removing manual work and ensuring employees and managers have real-time visibility.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo handles leave as a fully automated policy engine — from entitlement configuration to accrual and payroll sync — removing manual work and ensuring employees and managers have real-time visibility.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function LeaveManagementPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's leave management module is built for organisations with complex entitlement structures across multiple employment types and locations, where policy consistency and payroll accuracy must be maintained simultaneously without manual reconciliation.
+                Selevo's leave management module is built for organisations with complex entitlement structures across multiple employment types and locations, where policy consistency and payroll accuracy must be maintained simultaneously without manual reconciliation.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function LeaveManagementPage() {
       <PlatformVideoSection
         heading="See Leave Management"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR automates entitlements, accruals, approvals, and payroll sync in one connected leave system."
+        subtitle="Watch how Selevo automates entitlements, accruals, approvals, and payroll sync in one connected leave system."
         videoId="f-tyrSsy04k"
       />
 

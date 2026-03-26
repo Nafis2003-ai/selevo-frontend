@@ -19,14 +19,14 @@ export function PayrollVideoSection() {
             className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight"
             style={{ fontFamily: "var(--font-merriweather)" }}
           >
-            See AxisHR Payroll{" "}
+            See Selevo Payroll{" "}
             <span style={{ color: "#4ecdc4" }}>in Action</span>
           </h2>
           <p
             className="text-base max-w-2xl mx-auto leading-relaxed"
             style={{ color: "rgba(255,255,255,0.52)", fontFamily: "var(--font-plus-jakarta)" }}
           >
-            From validation to disbursement — see how AxisHR manages every step of the payroll
+            From validation to disbursement — see how Selevo manages every step of the payroll
             cycle with precision and full traceability.
           </p>
         </div>
@@ -67,7 +67,7 @@ export function PayrollVideoSection() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
-                  alt="AxisHR Payroll walkthrough"
+                  alt="Selevo Payroll walkthrough"
                   className="w-full h-full object-cover"
                 />
 
@@ -95,7 +95,7 @@ export function PayrollVideoSection() {
             ) : (
               <iframe
                 src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&rel=0&modestbranding=1`}
-                title="AxisHR Payroll Demo"
+                title="Selevo Payroll Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"

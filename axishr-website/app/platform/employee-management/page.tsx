@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Can we manage employees across multiple entities in one view?",
     answer:
-      "Yes. AxisHR supports multi-entity employee management with role-based visibility, so head office teams can view across all branches while branch managers are scoped to their own entities.",
+      "Yes. Selevo supports multi-entity employee management with role-based visibility, so head office teams can view across all branches while branch managers are scoped to their own entities.",
   },
   {
     question: "How does the self-service portal work for employees?",
@@ -95,7 +95,7 @@ const faqs = [
   {
     question: "Is there an organisation chart feature?",
     answer:
-      "Yes. AxisHR automatically generates a live organisational chart based on reporting line configurations. It updates in real time as roles, departments, and headcount change.",
+      "Yes. Selevo automatically generates a live organisational chart based on reporting line configurations. It updates in real time as roles, departments, and headcount change.",
   },
   {
     question: "What types of documents can be stored against an employee profile?",
@@ -150,7 +150,7 @@ export default function EmployeeManagementPage() {
                   className="text-[1.05rem] text-slate-500 max-w-md leading-relaxed"
                   style={{ fontFamily: "var(--font-plus-jakarta)" }}
                 >
-                  From hire to exit — AxisHR gives you a single, structured view of every employee
+                  From hire to exit — Selevo gives you a single, structured view of every employee
                   across entities, roles, and branches.
                 </p>
               </div>
@@ -234,8 +234,8 @@ export default function EmployeeManagementPage() {
                   body: "HR teams often manage employee data across spreadsheets, legacy systems, and disparate tools — leading to inconsistencies, outdated records, and limited visibility for leadership.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR consolidates all employee data into a single structured system with versioned history, policy linkage, and self-service capabilities — eliminating manual upkeep and data fragmentation.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo consolidates all employee data into a single structured system with versioned history, policy linkage, and self-service capabilities — eliminating manual upkeep and data fragmentation.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function EmployeeManagementPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR is designed to serve multi-entity businesses operating across branches and jurisdictions, where employee records must be accurate at both the local and group level without duplication or manual synchronisation.
+                Selevo is designed to serve multi-entity businesses operating across branches and jurisdictions, where employee records must be accurate at both the local and group level without duplication or manual synchronisation.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function EmployeeManagementPage() {
       <PlatformVideoSection
         heading="See Employee Management"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR centralises employee data, org structures, and self-service into one seamless system."
+        subtitle="Watch how Selevo centralises employee data, org structures, and self-service into one seamless system."
         videoId="f-tyrSsy04k"
       />
 

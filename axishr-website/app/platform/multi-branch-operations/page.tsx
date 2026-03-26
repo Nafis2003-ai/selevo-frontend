@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Can different branches have different payroll rules?",
     answer:
-      "Yes. Each branch or entity in AxisHR can have its own payroll cycle, statutory rules, leave policies, and approval workflows. Group-level settings can be inherited or overridden at the branch level.",
+      "Yes. Each branch or entity in Selevo can have its own payroll cycle, statutory rules, leave policies, and approval workflows. Group-level settings can be inherited or overridden at the branch level.",
   },
   {
     question: "How does head office visibility work across branches?",
@@ -95,12 +95,12 @@ const faqs = [
   {
     question: "Can we run payroll for multiple branches simultaneously?",
     answer:
-      "Yes. AxisHR supports concurrent payroll runs across branches. Each run operates independently with its own approval cycle, and consolidated summaries are available at the group level after all runs are locked.",
+      "Yes. Selevo supports concurrent payroll runs across branches. Each run operates independently with its own approval cycle, and consolidated summaries are available at the group level after all runs are locked.",
   },
   {
     question: "Is there a limit to how many branches or entities we can manage?",
     answer:
-      "No. AxisHR is built to scale across organisations of any size, from a few branches to hundreds of entities across multiple countries and jurisdictions.",
+      "No. Selevo is built to scale across organisations of any size, from a few branches to hundreds of entities across multiple countries and jurisdictions.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function MultiBranchOperationsPage() {
                   body: "Multi-branch businesses typically manage each location in separate systems, making group-level reporting manual, error-prone, and always out of date by the time it reaches leadership.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR models your full entity hierarchy natively. Branch-level operations run independently while group administrators retain real-time visibility and control without additional consolidation work.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo models your full entity hierarchy natively. Branch-level operations run independently while group administrators retain real-time visibility and control without additional consolidation work.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function MultiBranchOperationsPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR is designed for group structures operating across jurisdictions — enabling each entity to run its own HR and payroll operations while the group retains unified control, visibility, and compliance assurance across the entire organisation.
+                Selevo is designed for group structures operating across jurisdictions — enabling each entity to run its own HR and payroll operations while the group retains unified control, visibility, and compliance assurance across the entire organisation.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function MultiBranchOperationsPage() {
       <PlatformVideoSection
         heading="See Multi-Branch Operations"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR manages entity hierarchies, branch payroll, and consolidated reporting across your entire group."
+        subtitle="Watch how Selevo manages entity hierarchies, branch payroll, and consolidated reporting across your entire group."
         videoId="f-tyrSsy04k"
       />
 

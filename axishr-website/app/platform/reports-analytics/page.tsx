@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "What export formats are supported?",
     answer:
-      "AxisHR supports export to Excel (XLSX), CSV, and PDF. Each format is appropriate for different downstream uses — Excel and CSV for data analysis in finance tools, PDF for formal reporting and audit submissions.",
+      "Selevo supports export to Excel (XLSX), CSV, and PDF. Each format is appropriate for different downstream uses — Excel and CSV for data analysis in finance tools, PDF for formal reporting and audit submissions.",
   },
   {
     question: "Can we schedule reports to be generated and sent automatically?",
@@ -234,8 +234,8 @@ export default function ReportsAnalyticsPage() {
                   body: "Organisations using fragmented HR tools often spend significant time manually pulling data from multiple systems and assembling it into reports — a process that is slow, error-prone, and always behind the current state.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR generates all reports directly from live system data, with pre-built templates, flexible filters, and export options — so HR teams spend time acting on insight rather than producing it.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo generates all reports directly from live system data, with pre-built templates, flexible filters, and export options — so HR teams spend time acting on insight rather than producing it.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function ReportsAnalyticsPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's reporting layer is designed to serve every audience — from HR administrators needing operational detail to board-level leadership needing consolidated workforce cost and headcount summaries across their entire group.
+                Selevo's reporting layer is designed to serve every audience — from HR administrators needing operational detail to board-level leadership needing consolidated workforce cost and headcount summaries across their entire group.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function ReportsAnalyticsPage() {
       <PlatformVideoSection
         heading="See Reports & Analytics"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR delivers real-time workforce dashboards, branch summaries, and exportable compliance reports."
+        subtitle="Watch how Selevo delivers real-time workforce dashboards, branch summaries, and exportable compliance reports."
         videoId="f-tyrSsy04k"
       />
 

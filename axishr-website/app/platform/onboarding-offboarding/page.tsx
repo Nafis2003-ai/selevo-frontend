@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "Can onboarding tasks be customised by role or department?",
     answer:
-      "Yes. AxisHR supports multiple onboarding workflow templates that can be triggered based on the new employee's role, department, branch, or employment type. Each template defines the specific tasks, documents, and assignees relevant to that group.",
+      "Yes. Selevo supports multiple onboarding workflow templates that can be triggered based on the new employee's role, department, branch, or employment type. Each template defines the specific tasks, documents, and assignees relevant to that group.",
   },
   {
     question: "How does offboarding connect to final payroll?",
@@ -234,8 +234,8 @@ export default function OnboardingOffboardingPage() {
                   body: "Onboarding and offboarding often rely on manual checklists, email chains, and verbal handoffs between HR, IT, finance, and managers — resulting in inconsistent experiences and tasks falling through the gaps.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR automates both lifecycle transitions as configurable workflows — assigning tasks to the right people, tracking progress, collecting documents, and triggering payroll and access changes at the correct points.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo automates both lifecycle transitions as configurable workflows — assigning tasks to the right people, tracking progress, collecting documents, and triggering payroll and access changes at the correct points.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function OnboardingOffboardingPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's lifecycle workflows are designed for organisations where multiple teams — HR, IT, finance, and line management — must coordinate across these transitions reliably and with a complete audit trail of every step completed.
+                Selevo's lifecycle workflows are designed for organisations where multiple teams — HR, IT, finance, and line management — must coordinate across these transitions reliably and with a complete audit trail of every step completed.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function OnboardingOffboardingPage() {
       <PlatformVideoSection
         heading="See Onboarding & Offboarding"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR automates lifecycle workflows from first day setup to final settlement and exit."
+        subtitle="Watch how Selevo automates lifecycle workflows from first day setup to final settlement and exit."
         videoId="f-tyrSsy04k"
       />
 

@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "Can we set different expense policies for different employee groups?",
     answer:
-      "Yes. AxisHR supports multiple expense policies that can differ by employment type, department, grade, or branch. Each policy defines which claim categories are eligible, what the per-category limits are, and what documentation is required.",
+      "Yes. Selevo supports multiple expense policies that can differ by employment type, department, grade, or branch. Each policy defines which claim categories are eligible, what the per-category limits are, and what documentation is required.",
   },
   {
     question: "What happens if a claim is submitted without a receipt?",
@@ -100,7 +100,7 @@ const faqs = [
   {
     question: "Can approvers delegate claim approvals if they are unavailable?",
     answer:
-      "Yes. Approval delegation can be configured in AxisHR, allowing a named alternate to receive and action claims during an approver's absence. All delegated approvals are recorded with the acting approver's identity.",
+      "Yes. Approval delegation can be configured in Selevo, allowing a named alternate to receive and action claims during an approver's absence. All delegated approvals are recorded with the acting approver's identity.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function ClaimsExpensesPage() {
                   body: "Many organisations manage claims through email submissions, shared spreadsheets, or separate expense tools — requiring finance to manually adjust payroll each cycle with approved reimbursement amounts.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR connects claims directly to payroll as a native module — submission, approval, and payroll sync happen within one system, with policy rules enforced automatically and a complete audit trail at every stage.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo connects claims directly to payroll as a native module — submission, approval, and payroll sync happen within one system, with policy rules enforced automatically and a complete audit trail at every stage.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function ClaimsExpensesPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's claims module is designed for finance and HR teams who need policy-controlled submissions, structured approvals, and a direct link to payroll — eliminating the spreadsheet-based reconciliation that typically occurs at month-end in organisations without integrated expense management.
+                Selevo's claims module is designed for finance and HR teams who need policy-controlled submissions, structured approvals, and a direct link to payroll — eliminating the spreadsheet-based reconciliation that typically occurs at month-end in organisations without integrated expense management.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function ClaimsExpensesPage() {
       <PlatformVideoSection
         heading="See Claims & Expenses"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR manages expense submission, approval routing, and payroll sync in one connected workflow."
+        subtitle="Watch how Selevo manages expense submission, approval routing, and payroll sync in one connected workflow."
         videoId="f-tyrSsy04k"
       />
 

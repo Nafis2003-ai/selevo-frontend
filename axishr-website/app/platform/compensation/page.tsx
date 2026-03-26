@@ -83,7 +83,7 @@ const coreFeatures = [
 
 const faqs = [
   {
-    question: "How do salary bands and grades work in AxisHR?",
+    question: "How do salary bands and grades work in Selevo?",
     answer:
       "You define job grades with a minimum, midpoint, and maximum salary range. Each employee is assigned to a grade, and their salary is positioned within the band. This provides a structured framework for pay decisions and makes it easy to identify employees outside the expected range for their role.",
   },
@@ -100,7 +100,7 @@ const faqs = [
   {
     question: "Can we manage different compensation structures for different employee groups?",
     answer:
-      "Yes. AxisHR supports multiple compensation structures that can differ by entity, employment type, or job category. Each structure can have its own components, grade configuration, and approval workflow.",
+      "Yes. Selevo supports multiple compensation structures that can differ by entity, employment type, or job category. Each structure can have its own components, grade configuration, and approval workflow.",
   },
 ]
 
@@ -234,8 +234,8 @@ export default function CompensationPage() {
                   body: "Many HR teams manage compensation in spreadsheets separate from payroll, requiring manual reconciliation every cycle and making it difficult to audit historical changes or demonstrate pay equity.",
                 },
                 {
-                  label: "How AxisHR Resolves It",
-                  body: "AxisHR links compensation configuration directly to payroll, with structured grade management, approval-controlled revision workflows, and an immutable change history — so every pay decision is traceable.",
+                  label: "How Selevo Resolves It",
+                  body: "Selevo links compensation configuration directly to payroll, with structured grade management, approval-controlled revision workflows, and an immutable change history — so every pay decision is traceable.",
                 },
               ].map(({ label, body }) => (
                 <div key={label} className="flex gap-4">
@@ -441,7 +441,7 @@ export default function CompensationPage() {
                 className="text-slate-500 leading-relaxed mb-12 text-sm"
                 style={{ fontFamily: "var(--font-plus-jakarta)" }}
               >
-                AxisHR's compensation module is designed for HR and finance teams who need structured grade management, traceable revision workflows, and reliable payroll integration — supporting both day-to-day operations and strategic workforce cost planning.
+                Selevo's compensation module is designed for HR and finance teams who need structured grade management, traceable revision workflows, and reliable payroll integration — supporting both day-to-day operations and strategic workforce cost planning.
               </p>
               <div className="h-px mb-10" style={{ backgroundColor: "rgba(11,107,98,0.1)" }} />
               <p
@@ -495,7 +495,7 @@ export default function CompensationPage() {
       <PlatformVideoSection
         heading="See Compensation Management"
         headingAccent="in Action"
-        subtitle="Watch how AxisHR structures salary grades, manages revision workflows, and keeps payroll in sync automatically."
+        subtitle="Watch how Selevo structures salary grades, manages revision workflows, and keeps payroll in sync automatically."
         videoId="f-tyrSsy04k"
       />
 

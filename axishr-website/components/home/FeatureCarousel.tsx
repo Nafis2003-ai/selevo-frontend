@@ -22,7 +22,7 @@ const slides: {
     subtitle: "No duplicate records",
     title: "Multi-Branch Workforce Without Duplicate Records",
     description:
-      "AxisHR keeps one employee record across branch transfers and cross-branch assignments, so reporting and approvals stay accurate as teams move.",
+      "Selevo keeps one employee record across branch transfers and cross-branch assignments, so reporting and approvals stay accurate as teams move.",
     bullets: [
       "One employee can work across branches with full branch history.",
       "Hierarchy visibility supports head office, regional office, and branch management.",
@@ -36,7 +36,7 @@ const slides: {
     subtitle: "One seamless data flow",
     title: "One Data Flow From Attendance To Payroll",
     description:
-      "Instead of rebuilding payroll data every cycle, AxisHR routes attendance, leave, claims, and approvals into payroll-ready inputs.",
+      "Instead of rebuilding payroll data every cycle, Selevo routes attendance, leave, claims, and approvals into payroll-ready inputs.",
     bullets: [
       "Approval logic is policy-driven and traceable.",
       "Payroll runs use cleaner, validated workforce data.",
@@ -64,7 +64,7 @@ const slides: {
     subtitle: "Continuous improvement",
     title: "Phased Rollout With Continuous Improvement",
     description:
-      "AxisHR is designed for staged activation so teams can launch critical workflows first and expand without process rework.",
+      "Selevo is designed for staged activation so teams can launch critical workflows first and expand without process rework.",
     bullets: [
       "Start with workforce data and payroll readiness.",
       "Add performance, engagement, and advanced reporting in sequence.",
