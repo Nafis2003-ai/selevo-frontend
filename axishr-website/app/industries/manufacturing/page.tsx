@@ -682,6 +682,189 @@ export default function ManufacturingPage() {
         </div>
       </section>
 
+      {/* ── TESTIMONIAL ── */}
+      <section className="relative overflow-hidden" style={{ backgroundColor: DARK, minHeight: 520 }}>
+
+        {/* Teal blob — sits behind the photo on the right */}
+        <div
+          className="absolute"
+          style={{
+            width: 420,
+            height: 420,
+            borderRadius: "50%",
+            background: `radial-gradient(circle, rgba(78,205,196,0.22) 0%, transparent 70%)`,
+            right: -40,
+            top: "50%",
+            transform: "translateY(-50%)",
+          }}
+        />
+
+        {/* Photo — absolutely pinned to the right, full section height */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/guy.png"
+          alt="Ahmad Razif"
+          className="hidden lg:block absolute"
+          style={{
+            right: 60,
+            top: 0,
+            height: "100%",
+            width: "auto",
+            maxWidth: 420,
+            objectFit: "cover",
+            objectPosition: "top center",
+            zIndex: 1,
+          }}
+        />
+
+        {/* Gradient fade on the left edge of the photo so it blends into dark bg */}
+        <div
+          className="hidden lg:block absolute"
+          style={{
+            right: 380,
+            top: 0,
+            bottom: 0,
+            width: 180,
+            background: `linear-gradient(to right, ${DARK}, transparent)`,
+            zIndex: 2,
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 flex items-center" style={{ minHeight: 520 }}>
+          <div className="max-w-xl py-20">
+
+            {/* Large quote mark */}
+            <div
+              className="font-black select-none mb-2"
+              style={{
+                color: TEAL_LIGHT,
+                fontFamily: "var(--font-merriweather)",
+                fontSize: 96,
+                lineHeight: 0.8,
+              }}
+            >
+              &ldquo;
+            </div>
+
+            <blockquote
+              className="text-2xl lg:text-[1.85rem] font-bold text-white leading-snug mb-8"
+              style={{ fontFamily: "var(--font-merriweather)" }}
+            >
+              Selevo cut our monthly payroll cycle from three days to a single afternoon — across four plants and 600 workers.
+            </blockquote>
+
+            <div className="flex items-center gap-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/guy.png"
+                alt="Ahmad Razif"
+                style={{
+                  width: 44,
+                  height: 44,
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                  border: `2px solid ${TEAL_LIGHT}`,
+                }}
+              />
+              <div>
+                <p
+                  className="text-white font-semibold text-[0.95rem]"
+                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                >
+                  Ahmad Razif
+                </p>
+                <p
+                  className="text-sm"
+                  style={{ color: "rgba(255,255,255,0.45)", fontFamily: "var(--font-plus-jakarta)" }}
+                >
+                  Head of HR Operations · Apex Manufacturing Group
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ── SOCIAL PROOF BAR ── */}
+      <section className="px-4 sm:px-6 lg:px-8 bg-slate-50 flex items-center" style={{ minHeight: "100vh" }}>
+        <div className="max-w-5xl mx-auto w-full py-24 flex flex-col gap-20">
+
+          {/* Header */}
+          <div className="text-center">
+            <p
+              className="text-sm font-bold tracking-[0.1em] uppercase mb-4"
+              style={{ color: TEAL, fontFamily: "var(--font-plus-jakarta)" }}
+            >
+              Results that speak for themselves
+            </p>
+            <h2
+              className="text-3xl sm:text-4xl font-bold leading-snug mb-5"
+              style={{ color: DARK, fontFamily: "var(--font-merriweather)" }}
+            >
+              Manufacturing teams see the impact <br className="hidden sm:block" />
+              from day one
+            </h2>
+            <p
+              className="text-[0.95rem] text-slate-500 max-w-xl mx-auto leading-relaxed"
+              style={{ fontFamily: "var(--font-plus-jakarta)" }}
+            >
+              Selevo is built around the real operational demands of manufacturing — from multi-plant payroll to shift compliance. Here's what our customers see after going live.
+            </p>
+          </div>
+
+          {/* Stats grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { value: "600+", label: "Factory workers onboarded in a single day" },
+              { value: "40%", label: "Reduction in monthly payroll processing time" },
+              { value: "3×", label: "Faster compliance reporting across plants" },
+              { value: "99.8%", label: "Attendance data accuracy rate" },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="bg-slate-50 flex flex-col items-center text-center px-6 py-10 gap-3"
+              >
+                <span
+                  className="text-6xl sm:text-7xl font-black"
+                  style={{ color: TEAL, fontFamily: "var(--font-merriweather)" }}
+                >
+                  {stat.value}
+                </span>
+                <span
+                  className="text-[0.82rem] text-slate-500 leading-snug"
+                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                >
+                  {stat.label}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom trust line */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+            {[
+              "Used across 12+ countries",
+              "2M+ payslips processed",
+              "500+ organisations trust Selevo",
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TEAL }} />
+                <span
+                  className="text-[0.85rem] text-slate-500 font-medium"
+                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                >
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="relative overflow-hidden py-28">
         {/* background image */}

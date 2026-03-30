@@ -1,10 +1,5 @@
-"use client"
-
-import { useState } from "react"
 import Link from "next/link"
-import { ChevronLeft, ChevronRight, DollarSign, TrendingUp, CalendarDays, UserCheck, Users, Globe, Clock, BarChart3, Shield, Receipt } from "lucide-react"
-
-const VISIBLE = 4
+import { DollarSign, TrendingUp, CalendarDays, UserCheck, Users, Globe, Clock, BarChart3, Shield, Receipt } from "lucide-react"
 
 const features = [
   {
@@ -82,121 +77,57 @@ const features = [
 const BG = "#071f1c"
 
 export function PlatformFeaturesSlider() {
-  const [start, setStart] = useState(0)
-
-  const canPrev = start > 0
-  const canNext = start + VISIBLE < features.length
-
-  const prev = () => { if (canPrev) setStart((s) => s - 1) }
-  const next = () => { if (canNext) setStart((s) => s + 1) }
-
   return (
-    <section className="overflow-hidden flex flex-col justify-center" style={{ backgroundColor: BG, height: "100vh" }}>
-      <div className="relative flex-1 flex flex-col justify-center">
-
-        {/* Sliding track */}
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${start * (100 / VISIBLE)}%)` }}
-          >
-            {features.map((feature, i) => {
-              const Icon = feature.icon
-              return (
+    <section style={{ backgroundColor: BG }} className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={feature.href}
+                className="flex flex-col px-8 py-10"
+              >
+                {/* Icon badge */}
                 <div
-                  key={feature.href}
-                  className="flex-shrink-0 flex flex-col px-10 py-14"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 flex-shrink-0"
+                  style={{ backgroundColor: feature.iconBg }}
+                >
+                  <Icon className="w-6 h-6 text-white" />
+                </div>
+
+                {/* Title */}
+                <h3
+                  className="text-white text-xl font-bold leading-snug mb-3"
+                  style={{ fontFamily: "var(--font-merriweather)" }}
+                >
+                  {feature.title}
+                </h3>
+
+                {/* Description */}
+                <p
+                  className="text-sm leading-relaxed mb-6 flex-1"
                   style={{
-                    width: `${100 / VISIBLE}%`,
+                    color: "rgba(255,255,255,0.55)",
+                    fontFamily: "var(--font-plus-jakarta)",
                   }}
                 >
-                  {/* Icon badge */}
-                  <div
-                    className="w-16 h-16 rounded-xl flex items-center justify-center mb-8 flex-shrink-0"
-                    style={{ backgroundColor: feature.iconBg }}
-                  >
-                    <Icon className="w-7 h-7 text-white" />
-                  </div>
+                  {feature.description}
+                </p>
 
-                  {/* Title */}
-                  <h3
-                    className="text-white text-2xl font-bold leading-snug mb-4"
-                    style={{ fontFamily: "var(--font-merriweather)" }}
-                  >
-                    {feature.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p
-                    className="text-sm leading-relaxed mb-8 flex-1"
-                    style={{
-                      color: "rgba(255,255,255,0.55)",
-                      fontFamily: "var(--font-plus-jakarta)",
-                    }}
-                  >
-                    {feature.description}
-                  </p>
-
-                  {/* Learn More */}
-                  <Link
-                    href={feature.href}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:opacity-70 transition-opacity"
-                    style={{ fontFamily: "var(--font-plus-jakarta)" }}
-                  >
-                    Learn More
-                    <span aria-hidden>→</span>
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
+                {/* Learn More */}
+                <Link
+                  href={feature.href}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:opacity-70 transition-opacity"
+                  style={{ fontFamily: "var(--font-plus-jakarta)" }}
+                >
+                  Learn More
+                  <span aria-hidden>→</span>
+                </Link>
+              </div>
+            )
+          })}
         </div>
-
-        {/* Nav arrows — overlaid on left/right edges */}
-        <button
-          onClick={prev}
-          disabled={!canPrev}
-          aria-label="Previous"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all"
-          style={{
-            backgroundColor: canPrev ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.04)",
-            border: "1px solid rgba(255,255,255,0.12)",
-            cursor: canPrev ? "pointer" : "default",
-          }}
-        >
-          <ChevronLeft className="w-5 h-5" style={{ color: canPrev ? "#fff" : "rgba(255,255,255,0.25)" }} />
-        </button>
-
-        <button
-          onClick={next}
-          disabled={!canNext}
-          aria-label="Next"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all"
-          style={{
-            backgroundColor: canNext ? "rgba(255,255,255,0.12)" : "rgba(255,255,255,0.04)",
-            border: "1px solid rgba(255,255,255,0.12)",
-            cursor: canNext ? "pointer" : "default",
-          }}
-        >
-          <ChevronRight className="w-5 h-5" style={{ color: canNext ? "#fff" : "rgba(255,255,255,0.25)" }} />
-        </button>
-      </div>
-
-      {/* Dot indicators */}
-      <div className="flex justify-center items-center gap-2 pb-8">
-        {Array.from({ length: features.length - VISIBLE + 1 }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setStart(i)}
-            aria-label={`Go to position ${i + 1}`}
-            className="rounded-full transition-all duration-300"
-            style={{
-              width: i === start ? "20px" : "6px",
-              height: "6px",
-              backgroundColor: i === start ? "#fff" : "rgba(255,255,255,0.25)",
-            }}
-          />
-        ))}
       </div>
     </section>
   )

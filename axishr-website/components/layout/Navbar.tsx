@@ -38,6 +38,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
+import { SelevoLogo } from "@/components/ui/SelevoLogo"
 
 // Deep teal as the single primary color
 const TEAL = "#0b6b62"
@@ -191,24 +192,8 @@ export function Navbar() {
 
             {/* ── Logo + Desktop Nav (left-aligned) ── */}
             <div className="flex items-center gap-6">
-              <Link href="/" className="flex items-center gap-2.5 flex-shrink-0 group">
-                <div
-                  className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow"
-                  style={{ backgroundColor: TEAL }}
-                >
-                  <span
-                    className="text-white font-bold text-base"
-                    style={{ fontFamily: "var(--font-merriweather)" }}
-                  >
-                    S
-                  </span>
-                </div>
-                <span
-                  className="text-xl font-bold text-slate-900 tracking-tight"
-                  style={{ fontFamily: "var(--font-merriweather)", color: TEAL }}
-                >
-                  selevo
-                </span>
+              <Link href="/" className="flex-shrink-0">
+                <SelevoLogo variant="dark" size={36} />
               </Link>
 
               {/* ── Desktop Navigation ── */}

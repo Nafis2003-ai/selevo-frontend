@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
+import { SelevoLogo } from "@/components/ui/SelevoLogo"
 
 const TEAL = "#0b6b62"
 const TEAL_DARK = "#095950"
@@ -39,7 +40,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer style={{ backgroundColor: TEAL }}>
+    <footer style={{ backgroundColor: "#071f1c" }}>
       <div className="max-w-7xl mx-auto px-8 sm:px-10 pt-12 pb-8">
         {/* ── Main grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 lg:gap-12">
@@ -48,24 +49,8 @@ export function Footer() {
           <div className="flex flex-col gap-5">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 group w-fit">
-              <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ backgroundColor: "rgba(255,255,255,0.15)" }}
-              >
-                <span
-                  className="text-white font-bold text-base"
-                  style={{ fontFamily: "var(--font-merriweather)" }}
-                >
-                  S
-                </span>
-              </div>
-              <span
-                className="text-white text-xl font-bold tracking-tight"
-                style={{ fontFamily: "var(--font-merriweather)" }}
-              >
-                selevo
-              </span>
+            <Link href="/" className="w-fit">
+              <SelevoLogo variant="light" size={36} />
             </Link>
 
             {/* Tagline */}

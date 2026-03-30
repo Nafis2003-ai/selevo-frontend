@@ -6,6 +6,10 @@ import { FeatureCarousel } from "@/components/home/FeatureCarousel"
 import { CustomersSection } from "@/components/home/CustomersSection"
 import { PlatformFeaturesSlider } from "@/components/home/PlatformFeaturesSlider"
 import { FAQSection } from "@/components/home/FAQSection"
+import { CTASection } from "@/components/home/CTASection"
+import { IndustriesSection } from "@/components/home/IndustriesSection"
+import { TestimonialsSection } from "@/components/home/TestimonialsSection"
+import { ComplianceSection } from "@/components/home/ComplianceSection"
 
 const TEAL = "#0b6b62"
 
@@ -107,6 +111,18 @@ export default function Home() {
 
       {/* ── Platform Features Slider ── */}
       <PlatformFeaturesSlider />
+
+      {/* ── Industries ── */}
+      <IndustriesSection />
+
+      {/* ── Testimonials ── */}
+      <TestimonialsSection />
+
+      {/* ── Compliance ── */}
+      <ComplianceSection />
+
+      {/* ── CTA ── */}
+      <CTASection />
 
       {/* ── FAQ ── */}
       <FAQSection />
@@ -252,9 +268,7 @@ function HRCard({ pos, icon, title, subtitle, isRoot = false }: HRCardProps) {
         background: isRoot ? TEAL : "white",
         border: isRoot ? "none" : `1.5px solid rgba(11,107,98,0.16)`,
         borderLeft: isRoot ? "none" : `3px solid ${TEAL}`,
-        boxShadow: isRoot
-          ? `0 6px 24px rgba(11,107,98,0.28)`
-          : `0 2px 12px rgba(0,0,0,0.06)`,
+        boxShadow: "none",
       }}
     >
       {/* Icon container */}
